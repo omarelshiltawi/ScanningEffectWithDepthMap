@@ -137,7 +137,25 @@ const Html = () => {
   }, [isLoading]);
 
   return (
-   
+    <div>
+      <div
+        className="h-svh fixed z-90 bg-yellow-900 pointer-events-none w-full flex justify-center items-center"
+        data-loader
+      >
+        <div className="w-6 h-6 bg-white animate-ping rounded-full"></div>
+      </div>
+      <div className="h-svh">
+        
+          <div data-desc>
+            {/* Add additional content if necessary */}
+          </div>
+        </div>
+        <WebGPUCanvas>
+          <PostProcessing />
+          <Scene />
+        </WebGPUCanvas>
+      </div>
+    </div>
   );
 };
 
