@@ -139,7 +139,7 @@ const Html = () => {
   return (
     <div>
       <div
-        className="h-svh  fixed z-90 bg-yellow-900 pointer-events-none w-full flex justify-center items-center"
+        className="h-svh fixed z-90 bg-yellow-900 pointer-events-none w-full flex justify-center items-center"
         data-loader
       >
         <div className="w-6 h-6 bg-white animate-ping rounded-full"></div>
@@ -148,15 +148,18 @@ const Html = () => {
         <div className="h-svh uppercase items-center w-full absolute z-60 pointer-events-none px-10 flex justify-center flex-col">
           <div
             className="text-4xl md:text-7xl xl:text-8xl 2xl:text-9xl"
-            style={{
-              ...tomorrow.style,
-            }}
+            style={tomorrow.style}
+            data-title
           >
-           
-
+            Your Title Here
+          </div>
+          <div data-desc>
+            {/* Add additional content if necessary */}
+          </div>
+        </div>
         <WebGPUCanvas>
-          <PostProcessing></PostProcessing>
-          <Scene></Scene>
+          <PostProcessing />
+          <Scene />
         </WebGPUCanvas>
       </div>
     </div>
@@ -166,7 +169,7 @@ const Html = () => {
 export default function Home() {
   return (
     <ContextProvider>
-      <Html></Html>
+      <Html />
     </ContextProvider>
   );
 }
