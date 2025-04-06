@@ -152,21 +152,7 @@ const Html = () => {
               ...tomorrow.style,
             }}
           >
-            <div className="flex space-x-2 lg:space-x-6 overflow-hidden">
-              {'Crown of Fire'.split(' ').map((word, index) => {
-                return (
-                  <div data-title key={index}>
-                    {word}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className="text-xs md:text-xl xl:text-2xl 2xl:text-3xl mt-2 overflow-hidden">
-            <div data-desc>The Majesty and Glory of the Young King</div>
-          </div>
-        </div>
+           
 
         <WebGPUCanvas>
           <PostProcessing></PostProcessing>
