@@ -145,7 +145,14 @@ const Html = () => {
         <div className="w-6 h-6 bg-white animate-ping rounded-full"></div>
       </div>
       <div className="h-svh">
-        
+        <div className="h-svh uppercase items-center w-full absolute z-60 pointer-events-none px-10 flex justify-center flex-col">
+          <div
+            className="text-4xl md:text-7xl xl:text-8xl 2xl:text-9xl"
+            style={tomorrow.style}
+            data-title
+          >
+             
+          </div>
           <div data-desc>
             {/* Add additional content if necessary */}
           </div>
